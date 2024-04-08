@@ -1,10 +1,13 @@
 import React from 'react'
 
 const All = () => {
-    const currentUrl = window.location.href
-    console.log(currentUrl);
+  
   return (
-    <div className='all'>This is All Page.</div>
+    <div className='all'>
+        <h1>
+           This is All Page.
+        </h1>
+    </div>
   )
 }
 

@@ -1,20 +1,22 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import { Helmet } from 'react-helmet-async'
+import HelmetComponent from '../components/HelmetComponent'
 
 const Home = () => {
-    const currentUrl = window.location.href
-    console.log(currentUrl);
-    const baseUrl = process.env.REACT_APP_BASE_URL;
-    console.log(baseUrl);
+  const title = "Home"
+  const description = "Home Page Description"
+  const baseUrl = process.env.REACT_APP_BASE_URL;
+  const currentPath = window.location.pathname
+  const canonicalUrl = `${baseUrl}${currentPath}`
   return (
     <div className='home'>
-        <Helmet>
-            <title>Home</title>
-            <meta name="description" content="this is my home page description." />
-            <link rel="stylesheet" href="" />
-        </Helmet>
+        <HelmetComponent 
+          title={title}
+          description={description}
+          canonicalUrl={canonicalUrl}
+        />
+
         <NavBar />
         <h1>This is Home Page.</h1>
         <Footer />
