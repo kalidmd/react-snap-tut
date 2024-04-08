@@ -6,10 +6,11 @@ import HelmetComponent from '../components/HelmetComponent'
 const Works = () => {
   const title = "Works"
   const description = "Works Page Description"
-  const baseUrl = process.env.REACT_APP_BASE_URL;
+  // const baseUrl = process.env.REACT_APP_BASE_URL;
+  const baseUrl = window.location.origin;
   const currentPath = window.location.pathname
   const canonicalUrl = `${baseUrl}${currentPath}`
-
+  console.log(window.location.origin);
   return (
     <div className='works'>
         <HelmetComponent

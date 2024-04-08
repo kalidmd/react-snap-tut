@@ -4,7 +4,8 @@ import HelmetComponent from '../../components/HelmetComponent';
 const UiDesign = () => {
   const title = "Ui Design Page"
   const description = "Ui Desing Page Description"
-  const baseUrl = process.env.REACT_APP_BASE_URL;
+  // const baseUrl = process.env.REACT_APP_BASE_URL;
+  const baseUrl = window.location.origin;
   const currentPath = window.location.pathname
   const canonicalUrl = `${baseUrl}${currentPath}`
 

@@ -6,7 +6,8 @@ import HelmetComponent from '../components/HelmetComponent'
 const Home = () => {
   const title = "Home"
   const description = "Home Page Description"
-  const baseUrl = process.env.REACT_APP_BASE_URL;
+  // const baseUrl = process.env.REACT_APP_BASE_URL;
+  const baseUrl = window.location.origin;
   const currentPath = window.location.pathname
   const canonicalUrl = `${baseUrl}${currentPath}`
   return (
