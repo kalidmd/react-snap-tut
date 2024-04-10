@@ -1,6 +1,8 @@
 import React from 'react'
 import HelmetComponent from '../../components/HelmetComponent';
 
+import uiImage from "../../assets/images/ui-design.jpg"
+
 const UiDesign = () => {
   const title = "Ui Design Page"
   const description = "Ui Desing Page Description"
@@ -15,6 +17,9 @@ const UiDesign = () => {
           title={title}
           description={description}
           canonicalUrl={canonicalUrl} 
+          ogTitle={title}
+          ogImage={uiImage}
+          ogUrl={canonicalUrl}
         />
         <h1>
             This is Ui Design
