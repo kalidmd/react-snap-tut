@@ -10,7 +10,7 @@ const Works = () => {
   const baseUrl = window.location.origin;
   const currentPath = window.location.pathname
   const canonicalUrl = `${baseUrl}${currentPath}`
-  console.log(window.location.origin);
+
   return (
     <div className='works'>
         <HelmetComponent
