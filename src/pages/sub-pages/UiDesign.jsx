@@ -22,7 +22,7 @@ const UiDesign = () => {
           ogUrl={canonicalUrl}
         />
         <h1>
-            This is Ui Design
+            This is Ui Design Page
         </h1>
     </div>
   )
