@@ -15,8 +15,6 @@ const HelmetComponent = ({title, description, canonicalUrl, ogImage, ogUrl}) => 
       <meta property="og:url" content={ogUrl} /> 
       {/* <meta property="twitter:card" content={ogTwitterCard} /> 
       <meta property="twitter:image:alt" content={ogImageAlt} />  */}
-
-      {/* <meta property="og:type" content="video.movie" /> */}
     </Helmet>
   )
 }

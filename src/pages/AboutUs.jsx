@@ -3,7 +3,8 @@ import NavBar from '../components/NavBar'
 import { NavLink, Outlet } from 'react-router-dom'
 import Footer from '../components/Footer'
 import HelmetComponent from '../components/HelmetComponent'
-const Works = () => {
+
+const AboutUs = () => {
   const title = "Works"
   const description = "Works Page Description"
   // const baseUrl = process.env.REACT_APP_BASE_URL;
@@ -19,14 +20,16 @@ const Works = () => {
           canonicalUrl={canonicalUrl}
         />
         <NavBar />
-        <h1>This is Works Page.</h1>
-        <button> <NavLink to=""> All </NavLink> </button>
-        <button> <NavLink to="ui-design"> Ui Design </NavLink> </button>
-        <button> <NavLink to="landing-page"> Landing Page </NavLink> </button>
+        <h1 style={{textAlign: "center"}} >This is About Us Page.</h1>
+        <div className='sub-nav'>
+          <NavLink className="nested-page" to="" end> Nested Page 1 </NavLink>
+           <NavLink className="nested-page" to="nested-page-2"> Nested Page 2 </NavLink> 
+           <NavLink className="nested-page" to="nested-page-3"> Nested Page 3 </NavLink>
+        </div>
        <Outlet />
        <Footer />
     </div>
   )
 }
 
-export default Works
+export default AboutUs

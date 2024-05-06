@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
-import Works from "./pages/Works";
+import AboutUs from "./pages/AboutUs";
+// --pages--
 import PageNotFound from "./pages/PageNotFound";
-import UiDesign from "./pages/sub-pages/UiDesign";
-import LandingPage from "./pages/sub-pages/LandingPage";
-import All from "./pages/sub-pages/All";
+import NestedPage2 from "./pages/sub-pages/NestedPage2";
+import NestedPage3 from "./pages/sub-pages/NestedPage3";
+import NestedPage1 from "./pages/sub-pages/NestedPage1";
 
 export const router = createBrowserRouter([
     {
@@ -13,20 +14,20 @@ export const router = createBrowserRouter([
         errorElement: <PageNotFound />,
     },
     {
-        path: "works",
-        element: <Works />,
+        path: "about-us/",
+        element: <AboutUs />,
         children: [
             {
                 path: "",
-                element: <All />
+                element: <NestedPage1 />
             },
             {
-                path: "ui-design",
-                element: <UiDesign />
+                path: "nested-page-2",
+                element: <NestedPage2 />
             },
             {
-                path: "landing-page",
-                element: <LandingPage />
+                path: "nested-page-3",
+                element: <NestedPage3 />
             }
         ]
     }

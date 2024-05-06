@@ -4,18 +4,27 @@ body {
   color: #fff;
 }
 .App {
-  /* background-color: green; */
   margin: 40px auto;
   width: fit-content;
 }
 .nav-bar {
   text-align: center;
 }
-.nav-bar button {
+.nav-bar a, .nested-page {
   margin-right: 10px;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #fff;
+  padding: 3px 6px;
+  border-radius: 5px;
 }
 .works button {
   margin-right: 5px;
+}
+.sub-nav {
+  text-align: center;
 }
 .all, .landing-page, .ui-design, .react-app {
   margin-top: 10px;
@@ -24,4 +33,8 @@ body {
 .footer {
   text-align: center;
   margin-top: 20px;
+}
+.nested-page.active, .nav-bar a.active {
+  background-color: lightgreen;
+  color: blue;
 }

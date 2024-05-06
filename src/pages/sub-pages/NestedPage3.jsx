@@ -1,8 +1,9 @@
 import React from 'react'
 import HelmetComponent from '../../components/HelmetComponent';
-const LandingPage = () => {
-    const title = "Landing Page"
-    const description = "Landing Page Description"
+
+const NestedPage3 = () => {
+    const title = "Nested Page 3"
+    const description = "Nested Page 3 Description"
     const baseUrl = process.env.REACT_APP_BASE_URL;
     const currentPath = window.location.pathname
     const canonicalUrl = `${baseUrl}${currentPath}`
@@ -15,10 +16,10 @@ const LandingPage = () => {
           canonicalUrl={canonicalUrl}
        />
         <h1>
-            This is Landing Page
+            This is Nested Page 3.
         </h1>
     </div>
   )
 }
 
-export default LandingPage
+export default NestedPage3

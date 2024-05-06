@@ -3,9 +3,9 @@ import HelmetComponent from '../../components/HelmetComponent';
 
 import uiImage from "../../assets/images/ui-design.jpg"
 
-const UiDesign = () => {
-  const title = "Ui Design Page"
-  const description = "Ui Desing Page Description"
+const NestedPage2 = () => {
+  const title = "Nested Page 2"
+  const description = "Nested Page 2 Description"
   // const baseUrl = process.env.REACT_APP_BASE_URL;
   const baseUrl = window.location.origin;
   const currentPath = window.location.pathname
@@ -22,10 +22,10 @@ const UiDesign = () => {
           ogUrl={canonicalUrl}
         />
         <h1>
-            This is Ui Design Page
+            This is Nested Page 2.
         </h1>
     </div>
   )
 }
 
-export default UiDesign
+export default NestedPage2
